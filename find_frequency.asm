@@ -25,13 +25,12 @@ mov cx, 0010
 mov bl, 00h   
 mov al, 'E' 
 
-l1:    
+loop1:    
         scasb
-        jnz l2
+        jnz loop2
         inc bl
-l2:
-        loop l1
-
+loop2:
+        loop loop1
 
 ret
 
